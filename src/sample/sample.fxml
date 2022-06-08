@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadź promień walca w cm:" wrappingWidth="179.263671875" />
+      <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadź wysokość walca w cm:" wrappingWidth="179.263671875" />
+      <Text layoutX="14.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadź grubość blachy w cm:" wrappingWidth="179.263671875" />
+      <TextField fx:id="txtLicznik1" layoutX="201.0" layoutY="2.0" onAction="#OnTxtAction" prefHeight="25.0" prefWidth="66.0" />
+      <TextField fx:id="txtLicznik2" layoutX="201.0" layoutY="42.0" onAction="#OnTxtAction" prefHeight="25.0" prefWidth="66.0" />
+      <TextField fx:id="txtLicznik3" layoutX="201.0" layoutY="82.0" onAction="#OnTxtAction" prefHeight="25.0" prefWidth="66.0" />
+      <Text layoutX="10.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciężar materiału z normalnej blachy stalowej w kg:" wrappingWidth="276.263671875" />
+      <Text layoutX="10.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciężar materiału z blachy stalowej nierdzewnej w kg:" wrappingWidth="284.263671875" />
+      <TextField fx:id="txtWagaNorm" layoutX="300.0" layoutY="143.0" onAction="#OnTxtAction" prefHeight="25.0" prefWidth="284.0" />
+      <TextField fx:id="txtWagaNierdz" layoutX="300.0" layoutY="181.0" onAction="#OnTxtAction" prefHeight="25.0" prefWidth="284.0" />
+      <Text layoutX="273.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Po wpisaniu wymiarów, zatwierdź enterem" wrappingWidth="266.263671875" />
+      <Text layoutX="14.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cena materiału z normalnej blachy stalowej (2.90 zł za 1 kg) w zł:" wrappingWidth="343.263671875" />
+      <Text layoutX="14.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cena materiału z blachy stalowej nierdzewnej (5.80 za 1 kg) w zł:" wrappingWidth="343.263671875" />
+      <TextField fx:id="txtCenaNorm" layoutX="375.0" layoutY="238.0" onAction="#OnTxtAction" />
+      <TextField fx:id="txtCenaNierdz" layoutX="375.0" layoutY="274.0" onAction="#OnTxtAction" />
+   </children>
+</AnchorPane>
